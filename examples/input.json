@@ -1,0 +1,13 @@
+{
+  "name": "af3-api-smoke-test",
+  "modelSeeds": ["1"],
+  "dialect": "alphafold3",
+  "sequences": [
+    {
+      "proteinChain": {
+        "sequence": "MERPYACPVESCDRRFSRSDELTRHIRIHTGQKPFQCRICMRNFSRSDHLTTHIRTHTGEKPFACDICGRKFARSDERKRHTKIHLRQKD",
+        "count": 1
+      }
+    }
+  ]
+}

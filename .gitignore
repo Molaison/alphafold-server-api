@@ -1,0 +1,25 @@
+# --- 凭证：绝对不要提交 ---
+af3_cookies.txt
+cookies.json
+cookie.json
+*_cookies.json
+*_cookies.txt
+seed*.json
+.seed*.json
+
+# --- 运行产物 ---
+out/
+*.cif
+*.zip
+
+# --- 依赖 / 本地环境 ---
+node_modules/
+.env
+.env.*
+*.log
+
+# --- 编辑器 / 系统 ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

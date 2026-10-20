@@ -1,0 +1,38 @@
+{
+  "name": "alphafold-server-api",
+  "version": "1.0.0",
+  "description": "Unofficial reverse-engineered client for AlphaFold Server (alphafoldserver.com): submit jobs, poll status, download results.",
+  "main": "af3_client.js",
+  "bin": {
+    "af3": "af3.js",
+    "af3-login": "login.js"
+  },
+  "scripts": {
+    "verify": "node verify_offline.js",
+    "login": "node login.js"
+  },
+  "keywords": [
+    "alphafold",
+    "alphafold3",
+    "protein",
+    "structure-prediction",
+    "reverse-engineering",
+    "jspb",
+    "batchexecute"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "playwright-core": "^1.40.0"
+  },
+  "files": [
+    "af3_client.js",
+    "af3.js",
+    "login.js",
+    "verify_offline.js",
+    "examples/",
+    "docs/"
+  ]
+}
