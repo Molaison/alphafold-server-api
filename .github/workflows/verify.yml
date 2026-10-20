@@ -1,0 +1,27 @@
+name: verify
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+
+jobs:
+  encoder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # The offline check has no dependencies: it only rebuilds known-good
+      # request bodies and diffs them against real browser captures.
+      - name: Offline encoder check
+        run: node verify_offline.js
+
+      - name: Syntax check
+        run: |
+          for f in af3_client.js af3.js login.js verify_offline.js; do
+            node --check "$f"
+          done
